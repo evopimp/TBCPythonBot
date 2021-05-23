@@ -1,0 +1,20 @@
+## Interface: 20501
+## Title: DataToColor
+## Author: FreeHongKongMMO
+## Notes: An addon that displays player position as color
+## Version: 1.0.23
+## RequiredDeps:
+## OptionalDeps: Ace3, LibDataBroker-1.1, LibCompress, LibRangeCheck
+## SavedVariables:
+
+embeds.xml
+Libs\HereBeDragons\HereBeDragons-2.0.lua
+Libs\HereBeDragons\HereBeDragons-Pins-2.0.lua
+Libs\HereBeDragons\HereBeDragons-Migrate.lua
+
+#libs\HereBeDragons-1.0\HereBeDragons-1.0.lua
+
+Libs\LibRangeCheck-2.0\LibRangeCheck-2.0\LibRangeCheck-2.0.lua
+
+DataToColor.lua
+
