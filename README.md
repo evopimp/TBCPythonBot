@@ -17,7 +17,7 @@ https://docs.microsoft.com/en-us/aspnet/core/blazor
 
 - Pathing to grind route, vendor and repair. Indoors pathfinding only works properly if `PathFilename` is exists.
 
-- Further detail about the bot can be found in my [Blog post](http://www.codesin.net/post/wowbot/).
+- Further detail about the bot can be found in Julian Perrott's  [Blog post](http://www.codesin.net/post/wowbot/).
 
 ![Screenshot](https://raw.githubusercontent.com/Xian55/WowClassicGrindBot/main/images/Screenshot.png)
 
