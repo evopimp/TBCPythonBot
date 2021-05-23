@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/julianperrott/WowClassicGrindBot/master/images/starme.png" alt="Star this Repo"/>
 </p>
 
-# MasterOfPuppets - World of Warcraft Classic Grind Bot - Now Includes Pathing
+# W1cK3DS9L0IT - World of Warcraft Classic Grind Bot - Now Includes Pathing
 
 - Uses a modified version of the addon: https://github.com/FreeHongKongMMO/Happy-Pixels to read the game state. Sorry but the addon is coded for an english wow client and would need to be modified to work with any other languages.
 
@@ -813,3 +813,4 @@ Or from 2 command lines dotnet run each.
 The bot will use the PathingAPI to work out routes, these are shown on the route map as green points.
 
 ![Pathed Route](https://raw.githubusercontent.com/julianperrott/WowClassicGrindBot/master/images/PathedRoute.png)
+This is a recompile with changes to Warrior.json to better fit my warrior- W1cK3DS9L0IT
