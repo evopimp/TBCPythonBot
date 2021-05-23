@@ -1,0 +1,180 @@
+{
+  "ClassName": "Warlock",
+  "Loot": true,
+  "NPCMaxLevels_Above": 2,
+  "NPCMaxLevels_Below": 6,
+  "PathFilename": "23_Duskwood.json",
+  "PathThereAndBack": false,
+  "PathReduceSteps": true,
+
+  "Blacklist": ["Murloc Hunter", "Murloc Oracle", "Murloc Tidehunter"],
+
+  "ImmunityBlacklist": {
+    "1043": [
+      "Shadow"
+    ]
+  },
+
+  "Pull": {
+    "Sequence": [
+      {
+        "Name": "pull",
+        "Key": "5",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "ResetOnNewTarget": true,
+        "MinMana": 90,
+        "Log": false
+      }
+    ]
+  },
+  "Combat": {
+    "Sequence": [
+      {
+        "Name": "Drain Soul",
+        "Key": "9",
+        "School": "Shadow",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Requirements": ["TargetHealth%<40", "not BagItem:6265:72"],
+        "MinMana": 55
+      },
+      {
+        "Name": "Drain Life",
+        "Key": "N4",
+        "School": "Shadow",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Requirements": ["Health%<30"],
+        "MinMana": 55
+      },
+      {
+        "Name": "Immolate",
+        "Key": "5",
+        "Requirements": ["TargetHealth%>35", "not Immolate"],
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "ResetOnNewTarget": true,
+        "MinMana": 90,
+        "Log": false
+      },
+      {
+        "Name": "Curse of Agony",
+        "Key": "1",
+        "School": "Shadow",
+        "ResetOnNewTarget": true,
+        "Requirements": [ "TargetHealth%>35", "not Curse of Agony"],
+        "MinMana": 50,
+        "Log": false
+      },
+      {
+        "Name": "Corruption",
+        "Key": "7",
+        "School": "Shadow",
+        "Requirements": ["TargetHealth%>35", "not Corruption"],
+        "ResetOnNewTarget": true,
+        "MinMana": 55,
+        "Log": false
+      },
+      {
+        "Name": "Shadow Bolt",
+        "Key": "2",
+        "School": "Shadow",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "ResetOnNewTarget": true,
+        "MinMana": 110,
+        "Requirement": "TargetHealth%>35",
+        "Log": false,
+        "Cooldown": 8
+      },
+      {
+        "Name": "shoot",
+        "Key": "0",
+        "Cooldown": 3,
+        "Requirements": ["HasRangedWeapon", "not Shooting"],
+        "Log": false
+      },
+      {
+        "Name": "AutoAttack",
+        "Cooldown": 3,
+        "Requirements": ["not HasRangedWeapon", "not AutoAttacking"]
+      },
+      {
+        "Name": "Health Funnel",
+        "Key": "N6",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Requirements": ["Has Pet", "Health%>70", "PetHealth%<30"]
+      }
+    ]
+  },
+  "Parallel": {
+    "Sequence": [
+      {
+        "Name": "Food",
+        "StopBeforeCast": true,
+        "Key": "N1",
+        "Requirement": "Health%<50",
+        "Cooldown": 20,
+        "Log": false
+      },
+      {
+        "Name": "Water",
+        "StopBeforeCast": true,
+        "Key": "N2",
+        "Requirement": "Mana%<40",
+        "Cooldown": 20,
+        "Log": false
+      }
+    ]
+    },
+  "Adhoc": {
+    "Sequence": [
+      {
+        "Name": "Demon Armor",
+        "Key": "3",
+        "MinMana": 50,
+        "Requirement": "not Demon Armor",
+        "Log": false
+      },
+      {
+        "Name": "Summon Voidwalker",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "4",
+        "MinMana": 122,
+        "Requirements": ["BagItem:6265:1", "not Has Pet"],
+        "Log": false,
+        "Cooldown": 60
+      },
+      {
+        "Name": "Life Tap",
+        "Key": "8",
+        "Charge": 2,
+        "Requirements": ["Health%>70","Mana%<60"],
+        "Cooldown": 0,
+        "Log": false
+      }
+    ]
+  }
+,
+  "NPC": {
+      "Sequence": [
+        {
+          "Name": "Repair",
+          "Key": "C",
+          "Requirement": "Items Broken",
+          "PathFilename": "23_Duskwood_Vendor.json",
+          "Cost": 6
+        },
+        {
+          "Name": "Sell",
+          "Key": "C",
+          "Requirement": "BagFull",
+          "PathFilename": "23_Duskwood_Vendor.json",
+          "Cost": 6
+        }
+      ]
+  }
+}

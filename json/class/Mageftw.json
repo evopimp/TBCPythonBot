@@ -1,0 +1,108 @@
+{
+  "ClassName": "Mage",
+  "Loot": true,
+
+  "PathFilename": "1-5_Gnome.json",
+  "PathThereAndBack": true,
+  "PathReduceSteps": false,
+
+  "Pull": {
+    "Sequence": [
+      {
+        "Name": "Fireball",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "2",
+        "MinMana": 65
+      }
+    ]
+  },
+  "Combat": {
+    "Sequence": [
+      {
+        "Name": "Arcane Missiles",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "2",
+        "MinMana": 85,
+        "Requirement": "TargetHealth%>10"
+      },
+      {
+        "Name": "Fireball",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "3",
+        "MinMana": 45,
+        "Requirement": "TargetHealth%>10"
+      },
+      {
+        "Name": "Frostbolt",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "4",
+        "MinMana": 35,
+        "Requirement": "TargetHealth%>10"
+      },
+      {
+        "Name": "Frostnova",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "2",
+        "MinMana": 30,
+        "Requirement": "TargetHealth%>10"
+      },
+      {
+        "Name": "shoot",
+        "Key": "0",
+        "Cooldown": 3,
+        "Requirements": ["HasRangedWeapon", "not Shooting"],
+        "Log": false
+      },
+      {
+        "Name": "AutoAttack",
+        "Cooldown": 3,
+        "Requirements": ["not HasRangedWeapon", "not AutoAttacking"]
+      }
+    ]
+  },
+  "Adhoc": {
+    "Sequence": [
+          {
+        "Name": "Food",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "9",
+        "Requirement": "Health%<30",
+        "Cooldown": 15,
+        "Log": false
+      },
+      {
+        "Name": "Water",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "5",
+        "Requirement": "Mana%<30",
+        "Cooldown": 15,
+        "Log": false
+      }
+    ]
+  },
+  "NPC": {
+    "Sequence": [
+      {
+        "Name": "Repair",
+        "Key": "C",
+        "Requirement": "Items Broken",
+        "PathFilename": "1_Gnome_Vendor.json",
+        "Cost": 6
+      },
+      {
+        "Name": "Sell",
+        "Key": "C",
+        "Requirement": "BagFull",
+        "PathFilename": "1_Gnome_Vendor.json",
+        "Cost": 6
+      }
+    ]
+  }
+}

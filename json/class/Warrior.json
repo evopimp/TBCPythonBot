@@ -1,0 +1,98 @@
+{
+  "ClassName": "Warrior",
+  "Loot": true,
+  "NPCMaxLevels_Below": 8,
+
+  "PathFilename": "HillsbradfoothillsTower.json",
+  "SpiritPathFilename": "SpirtkeeperHillsborrow.json",
+  "PathThereAndBack": true,
+  "PathReduceSteps": false,
+
+
+  "Pull": {
+    "Sequence": [
+      {
+        "Name": "Charge",
+        "Key": "6",
+        "DelayAfterCast": 1000,
+        "WaitForWithinMelleRange": false
+      }
+    ]
+  },
+  "Combat": {
+    "Sequence": [
+      {
+        "Name": "Approach",
+        "Cooldown": 10
+      },
+      {
+        "Name": "Bloodrage",
+        "Key": "7",
+        "Cooldown": 60
+      },
+      {
+        "Name": "Battle Shout",
+        "Key": "9",
+        "MinRage": 10,
+        "Requirement": "not Battle Shout"
+      },
+      {
+        "Name": "Overpower",
+        "Key": "3",
+        "MinRage": 5,
+        "Cooldown": 10
+      },
+      {
+        "Name": "Rend",
+        "Key": "2",
+        "MinRage": 10,
+        "Requirement": "not Rend",
+        "Cooldown": 5
+      },
+      {
+        "Name": "Heroic Strike",
+        "Key": "1",
+        "MinRage": 10
+      }
+    ]
+  },
+  "Adhoc": {
+    "Sequence": [
+      {
+        "Name": "Healing Potion",
+        "Key": "F4",
+        "Requirement": "Health%<5",
+        "Cooldown": 60,
+        "InCombat": "true",
+        "Log": false,
+        "Cost": 3
+      },
+      {
+        "Name": "Eat",
+        "StopBeforeCast": false,
+        "Key": "=",
+        "Requirement": "Health%<60",
+        "Cooldown": 0,
+        "DelayAfterCast": 1000,
+        "Log": false,
+        "Cost": 3
+      },
+      {
+        "Name": "Well Fed",
+        "StopBeforeCast": false,
+        "Key": "7",
+        "Requirement": "not Well Fed",
+        "Cooldown": 1200,
+        "Log": false
+      },
+      {
+        "Name": "Sharpen Weapon 1",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "F1",
+        "Cooldown": 1800,
+        "Log": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "ClassName": "Warlock",
+  "Loot": true,
+  "NPCMaxLevels_Below": 4,
+  "PathFilename": "1_Gnome.json",
+  "PathThereAndBack": true,
+  "PathReduceSteps": false,
+
+  "Pull": {
+    "Sequence": [
+      {
+        "Name": "pull",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "5",
+        "MinMana": 25
+      }
+    ]
+  },
+  "Combat": {
+    "Sequence": [
+      {
+        "Name": "Immolate",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "5",
+        "Requirements": ["TargetHealth%>35", "not Immolate"], 
+        "ResetOnNewTarget": true,
+        "MinMana": 25
+      },
+      {
+        "Name": "Corruption",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "7",
+        "Requirements": ["TargetHealth%>35", "not Corruption"], 
+        "ResetOnNewTarget": true,
+        "MinMana": 25
+      },
+      {
+        "Name": "Shadow Bolt",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "2",
+        "MinMana": 25,
+        "Cooldown": 8
+      },
+      {
+        "Name": "shoot",
+        "Key": "0",
+        "Cooldown": 3,
+        "Requirements": ["HasRangedWeapon", "not Shooting"],
+        "Log": false
+      },
+      {
+        "Name": "AutoAttack",
+        "Cooldown": 3,
+        "Requirements": ["not HasRangedWeapon", "not AutoAttacking"]
+      }
+    ]
+  },
+  "Adhoc": {
+    "Sequence": [
+      {
+        "Name": "Demon Skin",
+        "Key": "3",
+        "MinMana": 50,
+        "Requirement": "not Demon Skin",
+        "Log": false
+      },
+      {
+        "Name": "Summon Imp",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "4",
+        "MinMana": 122,
+        "Requirement": "not Has Pet",
+        "Log": false
+      },
+      {
+        "Name": "Food",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "N1",
+        "Requirement": "Health%<50",
+        "Cooldown": 60
+      },
+      {
+        "Name": "Water",
+        "HasCastBar": true,
+        "StopBeforeCast": true,
+        "Key": "N2",
+        "Requirement": "Mana%<50",
+        "Cooldown": 60
+      }
+    ]
+  },
+  "NPC": {
+    "Sequence": [
+      {
+        "Name": "Repair",
+        "Key": "C",
+        "Requirement": "Items Broken",
+        "PathFilename": "1_Gnome_Vendor.json",
+        "Cost": 6
+      },
+      {
+        "Name": "Sell",
+        "Key": "C",
+        "Requirement": "BagFull",
+        "PathFilename": "1_Gnome_Vendor.json",
+        "Cost": 6
+      }
+    ]
+  }
+}
