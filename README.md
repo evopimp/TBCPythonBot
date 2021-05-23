@@ -21,7 +21,7 @@ https://docs.microsoft.com/en-us/aspnet/core/blazor
 
 ![Screenshot](https://raw.githubusercontent.com/Xian55/WowClassicGrindBot/main/images/Screenshot.png)
 
-# Video
+# Video Give Julian Perrott's Youtube a like and Subscribe if you like his work! 
 
 https://www.youtube.com/watch?v=CIMgbh5LuCc
 
@@ -813,4 +813,4 @@ Or from 2 command lines dotnet run each.
 The bot will use the PathingAPI to work out routes, these are shown on the route map as green points.
 
 ![Pathed Route](https://raw.githubusercontent.com/julianperrott/WowClassicGrindBot/master/images/PathedRoute.png)
-This is a recompile with changes to Warrior.json to better fit my warrior- W1cK3DS9L0IT
+
