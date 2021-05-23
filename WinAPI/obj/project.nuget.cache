@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "7GosDrdm+WYENXCvW5fNhdvwjM3Yz+xFQEvUzdaPxV1t23WZ4/Hz2yeTSk1gks0BobSrkiC36P7n6ZRNEaWsHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hopki\\OneDrive\\Documents\\Myaddon\\Wickedaddon\\WowClassicGrindBot\\WinAPI\\WinAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hopki\\.nuget\\packages\\pinvoke.windows.core\\0.6.6\\pinvoke.windows.core.0.6.6.nupkg.sha512",
+    "C:\\Users\\hopki\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

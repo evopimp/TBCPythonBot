@@ -1,0 +1,9 @@
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\bin\Debug\netstandard2.1\WinAPI.deps.json
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\bin\Debug\netstandard2.1\WinAPI.dll
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\bin\Debug\netstandard2.1\WinAPI.pdb
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\obj\Debug\netstandard2.1\WinAPI.csprojAssemblyReference.cache
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\obj\Debug\netstandard2.1\WinAPI.AssemblyInfoInputs.cache
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\obj\Debug\netstandard2.1\WinAPI.AssemblyInfo.cs
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\obj\Debug\netstandard2.1\WinAPI.csproj.CoreCompileInputs.cache
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\obj\Debug\netstandard2.1\WinAPI.dll
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\WinAPI\obj\Debug\netstandard2.1\WinAPI.pdb

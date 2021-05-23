@@ -1,0 +1,58 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "WinAPI/1.0.0": {
+        "dependencies": {
+          "PInvoke.Windows.Core": "0.6.6",
+          "System.Drawing.Common": "4.7.0"
+        },
+        "runtime": {
+          "WinAPI.dll": {}
+        }
+      },
+      "PInvoke.Windows.Core/0.6.6": {
+        "runtime": {
+          "lib/netstandard2.0/PInvoke.Windows.Core.dll": {
+            "assemblyVersion": "0.6.0.0",
+            "fileVersion": "0.6.6.62436"
+          }
+        }
+      },
+      "System.Drawing.Common/4.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "4.0.0.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WinAPI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PInvoke.Windows.Core/0.6.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mKGX6byrNwAXdaWUNIlDHfv5XDP1iQcmHhSZtd5bmtYAaIjrUDIj2nIpNO7c0PjX4dPi7CToCeEqg2ESandVBg==",
+      "path": "pinvoke.windows.core/0.6.6",
+      "hashPath": "pinvoke.windows.core.0.6.6.nupkg.sha512"
+    },
+    "System.Drawing.Common/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-v+XbyYHaZjDfn0ENmJEV1VYLgGgCTx1gnfOBcppowbpOAriglYgGCvFCPr2EEZyBvXlpxbEsTwkOlInl107ahA==",
+      "path": "system.drawing.common/4.7.0",
+      "hashPath": "system.drawing.common.4.7.0.nupkg.sha512"
+    }
+  }
+}
