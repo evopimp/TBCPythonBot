@@ -1,0 +1,81 @@
+﻿@using Core
+@inject Core.IBotController botController
+@inject Core.IAddonReader addonReader
+
+<div class="card" style="margin-top: 10px">
+    <div class="card-header">
+        Goals -> @addonReader.PlayerReader.MinRange - @addonReader.PlayerReader.MaxRange
+
+        <button class="btn btn-sm btn-primary float-right" @onclick="ToggleBot" disabled="@(disableButton ? "disabled" : null)">
+            @if (!botController.IsBotActive)
+            {
+                <span>Start Bot</span>
+            }
+            else
+            {
+                <span>Stop Bot</span>
+            }
+        </button>
+    </div>
+    @if (ShowGoals)
+    {
+        <div class="card-body">
+            <table class="table table-sm table-striped">
+                @if (botController.GoapAgent != null)
+                {
+                    foreach (var goal in botController.GoapAgent.AvailableGoals)
+                    {
+                        <GoapGoalView goal="goal" IsSelected="(goal == botController.GoapAgent.CurrentGoal)" ShowKeys="true" />
+                    }
+                }
+            </table>
+        </div>
+    }
+</div>
+
+@using SharedLib; 
+@code {
+
+    bool disableButton = false;
+
+    [Parameter]
+    public bool ShowGoals { get; set; } = true;
+
+    protected override void OnInitialized()
+    {
+        if (DataFrameConfiguration.Exists())
+        {
+            ValidateButton();
+
+            botController.ProfileLoaded -= OnProfileLoaded;
+            botController.ProfileLoaded += OnProfileLoaded;
+
+            ((Core.AddonReader)addonReader).AddonDataChanged += (o, e) =>
+            {
+                base.InvokeAsync(() =>
+                {
+                    try
+                    {
+                        StateHasChanged();
+                    }
+                    catch { }
+                });
+            };
+        }
+    }
+
+    private void ToggleBot()
+    {
+        botController.ToggleBotStatus();
+    }
+
+    private void OnProfileLoaded(object? sender, EventArgs e)
+    {
+        ValidateButton();
+    }
+
+    private void ValidateButton()
+    {
+        disableButton = string.IsNullOrEmpty(botController.SelectedClassFilename);
+    }
+}

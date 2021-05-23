@@ -1,0 +1,195 @@
+﻿@inject Core.IAddonReader addonReader
+@inject Core.IBotController botController
+@inject IJSRuntime JSRuntime;
+@using System.Linq
+@using Core
+
+<div class="card">
+    <div class="card-header">
+        <table width="100%">
+            <tr>
+                <td>Route</td>
+                <td>
+                    <div class="float-right">
+                        Player at @addonReader.PlayerReader.XCoord.ToString("0.00") , @addonReader.PlayerReader.YCoord.ToString("0.00") on map @addonReader.PlayerReader.ZoneId
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="card-body">
+
+        <div id="grid">
+
+            <svg width="@(Size+2)px" height="@(Size+2)px" style="margin-top:0px">
+                <g class="background">
+                </g>
+                <g class="group2">
+                    @{
+                        var colour = addonReader.PlayerReader.PlayerBitValues.PlayerInCombat ? "red" : "orange";
+
+                        if (botController.GoapAgent != null && botController.GoapAgent.CurrentGoal?.GetType() == typeof(Core.Goals.FollowRouteGoal))
+                        {
+                            colour = "blue";
+                        }
+
+                        @if (botController.RouteInfo != null)
+                        {
+                            <circle cx="@botController.RouteInfo.ToCanvasPointX(addonReader.PlayerReader.XCoord)" cy="@botController.RouteInfo.ToCanvasPointY(addonReader.PlayerReader.YCoord)" r="4" fill="@colour" />
+                        }
+                    }
+
+                    <g stroke-width="1" stroke="lightgray">
+                        @this.SpiritLines
+                    </g>
+                    <g fill="gray">
+                        @this.SpiritPathPoints
+                    </g>
+
+                    <g stroke-width="1" stroke="gray">
+                        @this.PathLines
+                    </g>
+                    <g fill="white">
+                        @this.PathPoints
+                    </g>
+
+                    <g stroke-width="1" stroke="white">
+                        @this.RouteToWaypointLines
+                    </g>
+                    <g fill="green">
+                        @this.RouteToWaypointPoints
+                    </g>
+
+                    @if (botController.RouteInfo != null)
+                    {
+                        <g fill="blue">
+                            @((MarkupString)botController.RouteInfo.NextPoint())
+                        </g>
+
+                        <g>
+                            @foreach (var death in this.Deaths)
+                            {
+                                @((MarkupString)botController.RouteInfo.DeathImage(death))
+                            }
+                        </g>
+
+                        <g>
+                            @foreach (var poi in this.botController.RouteInfo.PoiList)
+                            {
+                                @((MarkupString)botController.RouteInfo.DrawPoi(poi))
+                            }
+                        </g>
+                    }
+                </g>
+            </svg>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public int Size { get; set; } = 1024;
+
+    private MarkupString RouteToWaypointLines = new MarkupString();
+    private MarkupString RouteToWaypointPoints = new MarkupString();
+
+    private MarkupString PathLines = new MarkupString();
+    private MarkupString PathPoints = new MarkupString();
+
+    private MarkupString SpiritLines = new MarkupString();
+    private MarkupString SpiritPathPoints = new MarkupString();
+    private System.Timers.Timer refreshTimer = new System.Timers.Timer();
+
+    private bool CanvasInitialised = false;
+
+    private List<WowPoint> Deaths = new List<WowPoint>();
+
+    protected override void OnInitialized()
+    {
+        botController.ProfileLoaded -= OnProfileLoaded;
+        botController.ProfileLoaded += OnProfileLoaded;
+
+        ((Core.AddonReader)addonReader).AddonDataChanged += (o, e) =>
+        {
+            base.InvokeAsync(() =>
+            {
+                try
+                {
+                    InitialiseRoute();
+                    StateHasChanged();
+                }
+                catch { }
+            });
+        };
+    }
+
+    private void InitialiseRoute()
+    {
+        if (botController.RouteInfo != null)
+        {
+            if (!CanvasInitialised)
+            {
+                CanvasInitialised = true;
+                botController.RouteInfo.SetMargin(10);
+                botController.RouteInfo.SetCanvasSize(Size);
+
+                if (botController.GoapAgent != null)
+                {
+                    var walkToCorpseGoal = botController.GoapAgent.AvailableGoals.FirstOrDefault(a => a.GetType() == typeof(Core.Goals.WalkToCorpseGoal)) as Core.Goals.WalkToCorpseGoal;
+                    if (walkToCorpseGoal != null)
+                    {
+                        Deaths = walkToCorpseGoal.Deaths;
+                    }
+                }
+            }
+
+            RefreshPathMarkup();
+
+            if (!refreshTimer.Enabled)
+            {
+                refreshTimer.Interval = 10000;
+                refreshTimer.Enabled = true;
+
+                refreshTimer.Elapsed += (s, e) =>
+                {
+                    botController.RouteInfo.CalculatePointToGrid();
+                    RefreshPathMarkup();
+                };
+
+                refreshTimer.Start();
+            }
+        }
+    }
+
+    private void RefreshPathMarkup()
+    {
+        var routeinfo = botController.RouteInfo;
+
+        if (routeinfo != null)
+        {
+            this.PathLines = new MarkupString(routeinfo.RenderPathLines(routeinfo.PathPoints));
+            this.PathPoints = new MarkupString(routeinfo.RenderPathPoints(routeinfo.PathPoints));
+
+            this.SpiritLines = new MarkupString(routeinfo.RenderPathLines(routeinfo.SpiritPath));
+            this.SpiritPathPoints = new MarkupString(routeinfo.RenderPathPoints(routeinfo.SpiritPath));
+
+            var routeToWaypoints = routeinfo.RouteToWaypoint;
+            this.RouteToWaypointLines = new MarkupString(routeinfo.RenderPathLines(routeToWaypoints));
+            this.RouteToWaypointPoints = new MarkupString(routeinfo.RenderPathPoints(routeToWaypoints));
+        }
+    }
+
+    protected override async System.Threading.Tasks.Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeAsync<string>("draw");
+        }
+    }
+
+    private void OnProfileLoaded(object? sender, EventArgs e)
+    {
+        CanvasInitialised = false;
+    }
+}

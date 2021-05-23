@@ -1,0 +1,53 @@
+﻿@inject Core.IBotController botController
+
+<div class="@(Stretch ? "w-100 h-auto m-0 p-0" : "")">
+    <div class="row">
+        <img class="@(Stretch ? "img-fluid w-100" : "")" src="data:image/png;base64, @image" alt="Red dot" />
+    </div>
+</div>
+
+@using SharedLib;
+@using Game;
+@code {
+
+    [Parameter]
+    public int Size { get; set; } = 1024;
+
+    [Parameter]
+    public bool Stretch { get; set; } = false;
+
+    string image = "iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==";
+    string eventTime = "";
+
+    protected override void OnInitialized()
+    {
+        this.botController.WowScreen.Size = Size;
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        // execute conditionally for loading data, otherwise this will load
+        // every time the page refreshes
+        if (firstRender)
+        {
+            this.botController.WowScreen.OnScreenChanged -= this.ImageChanged;
+            this.botController.WowScreen.OnScreenChanged += this.ImageChanged;
+        }
+    }
+
+    private async void ImageChanged(object sender, ScreenChangeEventArgs args)
+    {
+        this.image = args.Screenshot;
+        this.eventTime = args.EventTime.ToString("HH:mm:ss");
+
+        await InvokeAsync(() =>
+        {
+            base.StateHasChanged();
+        });
+    }
+
+    public void Dispose()
+    {
+        this.botController.WowScreen.OnScreenChanged -= this.ImageChanged;
+    }
+}
