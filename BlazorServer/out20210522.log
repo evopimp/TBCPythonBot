@@ -1,0 +1,55 @@
+2021-05-22 15:07:07.450 -05:00 [DBG] Startup()
+2021-05-22 15:09:30.690 -05:00 [INF] AddonConfigurator.InstallPath - found running instance: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:10:02.292 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:10:02.299 -05:00 [INF] AddonConfigurator.InstallPath - correct - Interface\Addons : 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:10:02.304 -05:00 [ERR] AddonConfigurator.Author - error - cannot be empty: ''
+2021-05-22 15:10:51.359 -05:00 [ERR] AddonConfigurator.InstallPath - game not running
+2021-05-22 15:13:12.900 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\AddonConfig'
+2021-05-22 15:13:12.906 -05:00 [ERR] AddonConfigurator.InstallPath - error - unable to locate Interface\Addons folder: 'C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\AddonConfig'
+2021-05-22 15:13:32.991 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\AddonConfig'
+2021-05-22 15:13:32.997 -05:00 [ERR] AddonConfigurator.InstallPath - error - unable to locate Interface\Addons folder: 'C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\AddonConfig'
+2021-05-22 15:13:47.664 -05:00 [INF] AddonConfigurator.InstallPath - found running instance: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:13:54.966 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:13:54.971 -05:00 [INF] AddonConfigurator.InstallPath - correct - Interface\Addons : 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:13:54.982 -05:00 [INF] AddonConfigurator.DeleteAddon -> Default Addon Exists
+2021-05-22 15:13:55.231 -05:00 [ERR] Source directory does not exist or could not be found: .\Addons\
+2021-05-22 15:13:55.890 -05:00 [INF] AddonConfigurator.CopyFiles - Success
+2021-05-22 15:13:55.920 -05:00 [INF] AddonConfigurator.Install - Success
+2021-05-22 15:14:23.588 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:14:23.592 -05:00 [INF] AddonConfigurator.InstallPath - correct - Interface\Addons : 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:14:23.595 -05:00 [INF] AddonConfigurator.DeleteAddon -> Unique Addon Exists
+2021-05-22 15:14:23.773 -05:00 [ERR] Source directory does not exist or could not be found: .\Addons\
+2021-05-22 15:14:24.414 -05:00 [INF] AddonConfigurator.CopyFiles - Success
+2021-05-22 15:14:24.431 -05:00 [INF] AddonConfigurator.Install - Success
+2021-05-22 15:15:06.122 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:15:06.126 -05:00 [INF] AddonConfigurator.InstallPath - correct - Interface\Addons : 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:15:06.132 -05:00 [INF] AddonConfigurator.DeleteAddon -> Unique Addon Exists
+2021-05-22 15:15:06.336 -05:00 [ERR] Source directory does not exist or could not be found: .\Addons\
+2021-05-22 15:15:07.002 -05:00 [INF] AddonConfigurator.CopyFiles - Success
+2021-05-22 15:15:07.027 -05:00 [INF] AddonConfigurator.Install - Success
+2021-05-22 15:17:29.382 -05:00 [INF] AddonConfigurator.InstallPath - found running instance: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:20:20.260 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:20:20.578 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:22:40.852 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:22:40.855 -05:00 [INF] AddonConfigurator.InstallPath - correct - Interface\Addons : 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:22:40.859 -05:00 [INF] AddonConfigurator.DeleteAddon -> Unique Addon Exists
+2021-05-22 15:22:41.055 -05:00 [ERR] Source directory does not exist or could not be found: .\Addons\
+2021-05-22 15:22:41.925 -05:00 [INF] AddonConfigurator.CopyFiles - Success
+2021-05-22 15:22:41.955 -05:00 [INF] AddonConfigurator.Install - Success
+2021-05-22 15:23:20.136 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:23:20.571 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:25:54.060 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:25:54.436 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:31:42.209 -05:00 [DBG] Startup()
+2021-05-22 15:32:45.574 -05:00 [INF] AddonConfigurator.InstallPath - correct: 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:32:45.586 -05:00 [INF] AddonConfigurator.InstallPath - correct - Interface\Addons : 'C:\Program Files (x86)\World of Warcraft\_classic_'
+2021-05-22 15:32:45.593 -05:00 [INF] AddonConfigurator.DeleteAddon -> Unique Addon Exists
+2021-05-22 15:32:45.775 -05:00 [ERR] Source directory does not exist or could not be found: .\Addons\
+2021-05-22 15:32:46.440 -05:00 [INF] AddonConfigurator.CopyFiles - Success
+2021-05-22 15:32:46.474 -05:00 [INF] AddonConfigurator.Install - Success
+2021-05-22 15:34:38.900 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:34:39.315 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:36:28.260 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:36:28.676 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:37:04.406 -05:00 [ERR] AddonConfigurator.InstallPath - game not running
+2021-05-22 15:45:31.014 -05:00 [INF] Program.Main(): Starting blazor server

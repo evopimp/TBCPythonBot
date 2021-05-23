@@ -1,0 +1,28 @@
+2021-05-22 15:45:31.031 -05:00 [DBG] Startup()
+2021-05-22 15:45:31.057 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:32.080 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:33.100 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:34.126 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:35.151 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:36.166 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:37.190 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:38.215 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:45:39.234 -05:00 [INF] Unable to find the Wow process is it running ?
+2021-05-22 15:50:10.150 -05:00 [DBG] Startup()
+2021-05-22 15:51:05.875 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:51:06.191 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:56:01.748 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:56:02.112 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:56:02.836 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:08.545 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:09.297 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:10.609 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:11.993 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:13.340 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:56:13.441 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:13.607 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-22 15:56:14.724 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:16.002 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 15:56:22.018 -05:00 [INF] Program.Main(): The operation was canceled.
+2021-05-22 15:56:22.021 -05:00 [INF] 
+2021-05-22 15:56:25.034 -05:00 [INF] Program.Main(): Starting blazor server

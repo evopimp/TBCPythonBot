@@ -1,0 +1,4 @@
+2021-05-23 13:44:18.909 -05:00 [DBG] Startup()
+2021-05-23 13:44:34.653 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:44:34.981 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:44:56.403 -05:00 [INF] Program.Main(): Starting blazor server

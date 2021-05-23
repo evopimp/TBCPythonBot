@@ -1,0 +1,16 @@
+2021-05-23 13:44:56.419 -05:00 [DBG] Startup()
+2021-05-23 13:45:12.995 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:45:13.288 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:54:45.275 -05:00 [DBG] Startup()
+2021-05-23 13:54:59.315 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:54:59.779 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:55:16.534 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:55:16.845 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:55:18.409 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:55:18.490 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-23 13:55:18.793 -05:00 [INF] WowProcessInput: [Enter] pressing for 200ms
+2021-05-23 13:55:19.937 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-23 13:55:21.248 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-23 13:55:27.305 -05:00 [INF] Program.Main(): The operation was canceled.
+2021-05-23 13:55:27.307 -05:00 [INF] 
+2021-05-23 13:55:30.316 -05:00 [INF] Program.Main(): Starting blazor server

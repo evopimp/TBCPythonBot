@@ -1,0 +1,51 @@
+2021-05-22 23:19:07.233 -05:00 [DBG] Startup()
+2021-05-22 23:19:11.351 -05:00 [WRN] INFO: Pathing API is not running remotely, this means the local one will be used. http://localhost:5001/api/PPather/ Gave(No connection could be made because the target machine actively refused it.).
+2021-05-22 23:19:11.353 -05:00 [INF] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-22 23:19:11.355 -05:00 [INF] Using local pathing API.
+2021-05-22 23:19:11.356 -05:00 [INF] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-22 23:19:11.361 -05:00 [INF] MPQ dir is ../json/MPQ/
+2021-05-22 23:19:11.369 -05:00 [WRN] Some of these MPQ files should exist!
+2021-05-22 23:19:11.371 -05:00 [INF] ../json/MPQ/patch.MPQ
+2021-05-22 23:19:11.372 -05:00 [INF] ../json/MPQ/enUS\patch-enUS.MPQ
+2021-05-22 23:19:11.374 -05:00 [INF] ../json/MPQ/enGB\patch-enGB.MPQ
+2021-05-22 23:19:11.376 -05:00 [INF] ../json/MPQ/lichking.MPQ
+2021-05-22 23:19:11.377 -05:00 [INF] ../json/MPQ/common-2.MPQ
+2021-05-22 23:19:11.378 -05:00 [INF] ../json/MPQ/common.MPQ
+2021-05-22 23:19:11.379 -05:00 [INF] ../json/MPQ/expansion.MPQ
+2021-05-22 23:19:11.380 -05:00 [INF] ../json/MPQ/enUS\lichking-locale-enUS.MPQ
+2021-05-22 23:19:11.382 -05:00 [INF] ../json/MPQ/enUS\locale-enUS.MPQ
+2021-05-22 23:19:11.384 -05:00 [INF] ../json/MPQ/enUS\expansion-locale-enUS.MPQ
+2021-05-22 23:19:11.386 -05:00 [INF] ../json/MPQ/enGB\lichking-locale-enGB.MPQ
+2021-05-22 23:19:11.387 -05:00 [INF] ../json/MPQ/enGB\locale-enGB.MPQ
+2021-05-22 23:19:11.388 -05:00 [INF] ../json/MPQ/enGB\expansion-locale-enGB.MPQ
+2021-05-22 23:19:11.389 -05:00 [INF] ../json/MPQ/enUS\base-enUS.MPQ
+2021-05-22 23:19:11.391 -05:00 [INF] ../json/MPQ/enGB\base-enGB.MPQ
+2021-05-22 23:19:11.392 -05:00 [INF] ../json/MPQ/enUS\backup-enUS.MPQ
+2021-05-22 23:19:11.393 -05:00 [INF] ../json/MPQ/enGB\backup-enGB.MPQ
+2021-05-22 23:19:11.394 -05:00 [INF] ../json/MPQ/expansion1.MPQ
+2021-05-22 23:19:11.395 -05:00 [INF] ../json/MPQ/expansion2.MPQ
+2021-05-22 23:19:11.397 -05:00 [INF] ../json/MPQ/OldWorld.MPQ
+2021-05-22 23:19:11.400 -05:00 [INF] ../json/MPQ/world.MPQ
+2021-05-22 23:19:11.401 -05:00 [INF] ../json/MPQ/enGB\expansion1-locale-enGB.MPQ
+2021-05-22 23:19:11.402 -05:00 [INF] ../json/MPQ/enGB\expansion2-locale-enGB.MPQ
+2021-05-22 23:19:11.403 -05:00 [INF] ../json/MPQ/enGB\locale-enGB.MPQ
+2021-05-22 23:19:11.404 -05:00 [INF] ../json/MPQ/enGB\locale-enGB.MPQ
+2021-05-22 23:19:11.405 -05:00 [INF] ../json/MPQ/wow-update-13164.MPQ
+2021-05-22 23:19:11.406 -05:00 [INF] ../json/MPQ/wow-update-oldworld-13154.MPQ
+2021-05-22 23:19:11.408 -05:00 [INF] ../json/MPQ/Cache\patch-base-oldworld-13154.MPQ
+2021-05-22 23:19:11.409 -05:00 [INF] ../json/MPQ/Cache\enGB\patch-enGB-oldworld-13154.MPQ
+2021-05-22 23:19:11.410 -05:00 [INF] ../json/MPQ/expansion2.MPQ
+2021-05-22 23:19:11.411 -05:00 [INF] ../json/MPQ/expansion1.MPQ
+2021-05-22 23:19:11.412 -05:00 [INF] ../json/MPQ/world.MPQ
+2021-05-22 23:19:11.413 -05:00 [INF] ../json/MPQ/sound.MPQ
+2021-05-22 23:19:11.414 -05:00 [INF] ../json/MPQ/art.MPQ
+2021-05-22 23:19:11.415 -05:00 [INF] ../json/MPQ/enGB\expansion2-locale-enGB.MPQ
+2021-05-22 23:19:11.417 -05:00 [INF] ../json/MPQ/enGB\expansion1-locale-enGB.MPQ
+2021-05-22 23:19:11.418 -05:00 [INF] ../json/MPQ/enGB\locale-enGB.MPQ
+2021-05-22 23:19:11.419 -05:00 [INF] ../json/MPQ/enGB\base-enGB.MPQ
+2021-05-22 23:19:11.420 -05:00 [ERR] No MPQ files found, refer to the Readme to download them.
+2021-05-22 23:19:11.422 -05:00 [INF] ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2021-05-22 23:19:11.436 -05:00 [INF] Using AddonDataProvider
+2021-05-22 23:19:11.437 -05:00 [WRN] AH prices unavailable, don't worry about this message!
+2021-05-22 23:19:11.689 -05:00 [DBG] Woohoo, I have read the player class. You are a Warrior.
+2021-05-22 23:19:14.215 -05:00 [INF] Program.Main(): Starting blazor server
