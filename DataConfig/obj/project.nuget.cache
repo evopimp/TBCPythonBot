@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "S5umfT7v2zJtSSAwG/vFidlUIZQxLQ+Gp4FRxqwj5BT/3ja2DjUIigPoZw639rOWthCbMM1Ml36MihlnjpOXCg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hopki\\OneDrive\\Documents\\Myaddon\\Wickedaddon\\WowClassicGrindBot\\DataConfig\\DataConfig.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hopki\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\bin\Debug\netstandard2.1\DataConfig.deps.json
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\bin\Debug\netstandard2.1\DataConfig.dll
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\bin\Debug\netstandard2.1\DataConfig.pdb
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\obj\Debug\netstandard2.1\DataConfig.csprojAssemblyReference.cache
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\obj\Debug\netstandard2.1\DataConfig.AssemblyInfoInputs.cache
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\obj\Debug\netstandard2.1\DataConfig.AssemblyInfo.cs
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\obj\Debug\netstandard2.1\DataConfig.csproj.CoreCompileInputs.cache
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\obj\Debug\netstandard2.1\DataConfig.dll
+C:\Users\hopki\OneDrive\Documents\Myaddon\Wickedaddon\WowClassicGrindBot\DataConfig\obj\Debug\netstandard2.1\DataConfig.pdb
